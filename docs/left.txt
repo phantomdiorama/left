@@ -9,6 +9,15 @@ CONTENTS           *LeftContents*
 =================================
 Usage              *LeftUsage*
 
+You must configure Left to use the same background colour as your colorscheme. In
+your vimrc add something like:
+
+```
+let g:left_bg = "#000000"
+```
+
+Note: If using vim in terminal you must set `termguicolors`
+
 :Left ......... Turn on Left
 :LeftOff ...... Turn off Left
 
