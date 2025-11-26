@@ -1,0 +1,29 @@
+=================================
+CONTENTS           *LeftContents*
+
+1. Usage ........... |LeftUsage|
+2. Bugs ............ |LeftBugs|
+3. Changelog ....... |LeftChangelog|
+4. Credits ......... |LeftCredits|
+
+=================================
+Usage              *LeftUsage*
+
+:Left ......... Turn on Left
+:LeftOff ...... Turn off Left
+
+=================================
+Bugs               *LeftBugs*
+
+If your colorscheme does not set g:colors_name then LeftOff will fail. Most
+colorschemes set this correctly so this is considered *won’t fix*   
+=================================
+Changelog          *LeftChangelog*
+
+2025-11-26 .... Version 1.0
+
+=================================
+Credits            *LeftCredits*
+
+Author ..... phantomdiorama <https://github.com/phantomdiorama>
+License .... MIT <https://opensource.org/license/mit>
