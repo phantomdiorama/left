@@ -7,7 +7,7 @@ pretty decent "Writing Mode" for Vim.
 
 ## Setup
 
-You must configure Left to use the same background colour as your colorscheme. Quickest way find the hex value is to run
+You must configure Left to use the same background colour as your colorscheme. The quickest way to find the hex value is to run:
 
 `:highlight Normal`
 
