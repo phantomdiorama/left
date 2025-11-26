@@ -1,16 +1,20 @@
 =================================
 CONTENTS           *LeftContents*
 
-1. Usage ........... |LeftUsage|
-2. Bugs ............ |LeftBugs|
-3. Changelog ....... |LeftChangelog|
-4. Credits ......... |LeftCredits|
+1. Setup ........... |LeftSetup|
+2. Usage ........... |LeftUsage|
+3. Bugs ............ |LeftBugs|
+4. Changelog ....... |LeftChangelog|
+5. Credits ......... |LeftCredits|
 
 =================================
-Usage              *LeftUsage*
+Setup              *LeftSetup*
 
-You must configure Left to use the same background colour as your colorscheme. In
-your vimrc add something like:
+You must configure Left to use the same background colour as your colorscheme. Quickest way find the hex value is to run
+
+`:highlight Normal`
+
+Then add it to your vimrc:
 
 ```
 let g:left_bg = "#000000"
@@ -18,14 +22,19 @@ let g:left_bg = "#000000"
 
 Note: If using vim in terminal you must set `termguicolors`
 
-:Left ......... Turn on Left
-:LeftOff ...... Turn off Left
+=================================
+Usage              *LeftUsage*
+
+Left exports two commands:
+
+:Left ......... Turn on
+:LeftOff ...... Turn off
 
 =================================
 Bugs               *LeftBugs*
 
-If your colorscheme does not set g:colors_name then LeftOff will fail. Most
-colorschemes set this correctly so this is considered *won’t fix*   
+If your colorscheme does not set `g:colors_name` then LeftOff will fail. Most
+colorschemes set this correctly so I have marked this as *won’t fix*
 =================================
 Changelog          *LeftChangelog*
 

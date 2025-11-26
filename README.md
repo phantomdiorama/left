@@ -1,20 +1,23 @@
 # Left - A writing mode for Vim
 
-By padding the left margin and setting wrap and text width options, we get a
+By padding the left margin and setting wrap and text width options, we can get a
 pretty decent "Writing Mode" for Vim.
 
 **Note:** The plug-in works but is still under development
 
 ## Setup
 
-You must configure Left to use the same background colour as your colorscheme. In
-your vimrc add something like:
+You must configure Left to use the same background colour as your colorscheme. Quickest way find the hex value is to run
+
+`:highlight Normal`
+
+Then add it to your vimrc:
 
 ```
 let g:left_bg = "#000000"
 ```
 
-**Note:** If using vim in terminal you must set `termguicolors`
+**Note:** If using vim in terminal you must also set `termguicolors`
 
 ## Usage
 
@@ -29,5 +32,4 @@ Left is deliberately minimal. If you need more features consider:
 
 - [Goyo](https://github.com/junegunn/goyo.vim)
 - [Lite-dfm](https://github.com/bilalq/lite-dfm)
-
 
