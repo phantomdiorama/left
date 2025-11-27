@@ -1,7 +1,9 @@
 " Left -- distraction free mode
+let s:left_enable = 0
 
 function! Left()
     " set variables
+    let s:left_enable = 1
     let s:old_foldenable = &foldenable
     let s:old_foldcolumn = &foldcolumn
     let s:old_laststatus = &laststatus
@@ -13,9 +15,9 @@ function! Left()
     let s:old_wrap = &wrap
 
     " set colors
-    exe 'highlight FoldColumn guibg=NONE guifg=' . g:left_bg
-    exe 'highlight LineNr     guibg=NONE guifg=' . g:left_bg
-    exe 'highlight NonText    guibg=NONE guifg=' . g:left_bg
+    exe 'highlight FoldColumn guibg=' . g:left_guibg . ' guifg=' . g:left_guibg . ' ctermbg=' . g:left_ctermbg . ' ctermfg=' . g:left_ctermbg
+    exe 'highlight NonText    guibg=' . g:left_guibg . ' guifg=' . g:left_guibg . ' ctermbg=' . g:left_ctermbg . ' ctermfg=' . g:left_ctermbg
+    exe 'highlight LineNr     guibg=' . g:left_guibg . ' guifg=' . g:left_guibg . ' ctermbg=' . g:left_ctermbg . ' ctermfg=' . g:left_ctermbg
 
     " set options
     set laststatus=0
@@ -26,6 +28,7 @@ function! Left()
 endfunction
 
 function! LeftOff()
+    let s:left_enable = 0
     let &foldcolumn = s:old_foldcolumn
     let &foldenable = s:old_foldenable
     let &laststatus = s:old_laststatus
@@ -38,5 +41,14 @@ function! LeftOff()
     exe 'colorscheme ' . g:colors_name
 endfunction
 
+function! LeftToggle()
+    if s:left_enable == 1
+        call LeftOff()
+    else
+        call Left()
+    endif
+endfunction
+
 command! Left call Left()
 command! LeftOff call LeftOff()
+command! LeftToggle call LeftToggle()

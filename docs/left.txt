@@ -10,25 +10,26 @@ CONTENTS           *LeftContents*
 =================================
 Setup              *LeftSetup*
 
-You must configure Left to use the same background colour as your colorscheme. The quickest way to find the hex value is to run:
+You must configure Left to use the same background colour as your colorscheme. The
+quickest way to find the colour values is to run:
 
 `:highlight Normal`
 
-Then add it to your vimrc:
+Then add them to your vimrc:
 
 ```
-let g:left_bg = "#000000"
+let g:left_guibg = "#000000"
+let g:left_ctermbg = "0"
 ```
-
-Note: If using vim in terminal you must set `termguicolors`
 
 =================================
 Usage              *LeftUsage*
 
-Left exports two commands:
+Left exports three commands:
 
-:Left ......... Turn on
-:LeftOff ...... Turn off
+:Left ............ Turn on
+:LeftOff ......... Turn off
+:LeftToggle ...... Toggle
 
 =================================
 Bugs               *LeftBugs*
@@ -38,6 +39,7 @@ colorschemes set this correctly so I have marked this as *won’t fix*
 =================================
 Changelog          *LeftChangelog*
 
+2025-11-27 .... Version 1.1
 2025-11-26 .... Version 1.0
 
 =================================

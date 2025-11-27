@@ -7,24 +7,24 @@ pretty decent "Writing Mode" for Vim.
 
 ## Setup
 
-You must configure Left to use the same background colour as your colorscheme. The quickest way to find the hex value is to run:
+You must configure Left to use the same background colour as your colorscheme. The quickest way to find the colour values is to run:
 
 `:highlight Normal`
 
-Then add it to your vimrc:
+Then add them to your vimrc:
 
 ```
-let g:left_bg = "#000000"
+let g:left_guibg = "#000000"
+let g:left_ctermbg = "#0"
 ```
-
-**Note:** If using vim in terminal you must also set `termguicolors`
 
 ## Usage
 
-Left exports two commands:
+Left exports three commands:
 
 - Turn on with `:Left`
 - Turn off with `:LeftOff`
+- Toggle with `:LeftToggle`
 
 ## Alternatives
 
