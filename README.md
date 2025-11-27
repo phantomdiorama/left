@@ -15,7 +15,7 @@ Then add them to your vimrc:
 
 ```
 let g:left_guibg = "#000000"
-let g:left_ctermbg = "#0"
+let g:left_ctermbg = "0"
 ```
 
 ## Usage
