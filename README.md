@@ -3,6 +3,8 @@
 By padding the left margin and setting wrap and text width options, we can get a
 pretty decent "Writing Mode" for Vim.
 
+![screenshot](left.png)
+
 **Note:** The plug-in works but is still under development
 
 ## Setup
